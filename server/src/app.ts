@@ -4,6 +4,8 @@ import cookieParser from "cookie-parser";
 import express from "express";
 
 const app = express();
+// Derrière Caddy (reverse proxy) : lire la vraie IP du visiteur dans X-Forwarded-For
+app.set("trust proxy", 1);
 
 // Configure it
 

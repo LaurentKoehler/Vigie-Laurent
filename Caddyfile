@@ -1,0 +1,8 @@
+vigiep3.fr {
+	encode zstd gzip
+	reverse_proxy app:3310
+}
+
+www.vigiep3.fr {
+	redir https://vigiep3.fr{uri} permanent
+}
