@@ -41,7 +41,10 @@
 			"include": ["**/index.css"],
 			"linter": {
 				"rules": {
-					"correctness": { "noInvalidPositionAtImportRule": "off" }
+					"correctness": {
+						"noInvalidPositionAtImportRule": "off",
+						"noUnknownProperty": "off"
+					}
 				}
 			}
 		}
