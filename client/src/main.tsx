@@ -22,6 +22,7 @@ import Login from "@/pages/Login/Login";
 import NotFound from "@/pages/NotFound/NotFound";
 import NotificationCenter from "@/pages/Notification/NotificationCenter";
 import Numbers from "@/pages/Numbers/Numbers";
+import Privacy from "@/pages/Privacy/Privacy";
 import Profile from "@/pages/Profile/Profile";
 import ProfileBadges from "@/pages/Profile/ProfileBadges";
 import Register from "@/pages/Register/Register";
@@ -137,6 +138,10 @@ const router = createBrowserRouter([
 			{
 				path: "cgu",
 				element: <Cgu />,
+			},
+			{
+				path: "privacy",
+				element: <Privacy />,
 			},
 			{
 				path: "verify-email",
