@@ -308,10 +308,25 @@ export default function Register() {
 								className="text-sm text-primary"
 							>
 								J'accepte les{" "}
-								<Link to="/cgu" className="font-bold underline">
+								{/* Nouvel onglet : le formulaire en cours n'est pas perdu. */}
+								<Link
+									to="/cgu"
+									target="_blank"
+									rel="noopener"
+									className="font-bold underline"
+								>
 									conditions générales
 								</Link>{" "}
-								et la politique de confidentialité.
+								et la{" "}
+								<Link
+									to="/privacy"
+									target="_blank"
+									rel="noopener"
+									className="font-bold underline"
+								>
+									politique de confidentialité
+								</Link>
+								.
 							</label>
 						</div>
 						{fieldErrors.cgu && (
